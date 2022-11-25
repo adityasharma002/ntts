@@ -1,0 +1,22 @@
+<html>
+<h1>Welcome, <%= studentname %></h1>
+<br>
+<h3>Your courses this semester: </h3>
+<br>
+
+<ul> 
+  <% coursesnames.forEach((item)=>{%> 
+  <li><%=item%></li>  
+  <%});%> 
+</ul>
+
+<br>
+
+<ul> 
+    <% coursesnames.map((items)=>{ %>
+      <li>
+          <%= items %>
+      </li>
+    <% }) %>
+   </ul>
+</html>
